@@ -87,12 +87,6 @@ background-color: var(--accent)
 .acs-bg-accent2 {
 background-color: var(--accent2)
 }
-.acs-bg-black {
-background-color: var(--black)
-}
-.acs-bg-white {
-background-color: var(--white)
-}
 .acs-bg-gray {
 background-color: var(--gray)
 }
