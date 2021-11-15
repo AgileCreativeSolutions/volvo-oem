@@ -19,6 +19,70 @@ font-style: normal;
 }
 
 
+.acs-h1, .acs-h2, .acs-h3, .acs-h4, .acs-h5, .acs-h6 {
+font-family: "volvo-sans-medium", sans-serif;
+font-weight: 700;
+line-height: 1.2;
+}
+
+.acs-h1-broad, .acs-h2-broad, .acs-h3-broad, .acs-h4-broad, .acs-h5-broad, .acs-h6-broad {
+font-family: "volvo-broad", sans-serif;
+font-weight: 400;
+line-height: 1.2;
+}
+
+.acs-h1, .acs-h1-broad {
+font-size: 2rem;
+}
+
+.acs-h2, .acs-h2-broad {
+font-size: 1.8rem;
+}
+
+.acs-h3, .acs-h3-broad {
+font-size: 1.6rem;
+}
+
+.acs-h4, .acs-h4-broad {
+font-size: 1.4rem;
+}
+
+.acs-h5, .acs-h5-broad {
+font-size: 1.2rem;
+}
+
+.acs-h6, .acs-h6-broad {
+font-size: 1.1rem;
+}
+
+/* Larger than phablet */
+@media (min-width: 575px) {
+.acs-h1, .acs-h1-broad {
+font-size: 2.5rem !important;
+}
+
+.acs-h2, .acs-h2-broad {
+font-size: 2.2rem !important;
+}
+
+.acs-h3, .acs-h3-broad {
+font-size: 1.8rem !important;
+}
+
+.acs-h4, .acs-h4-broad {
+font-size: 1.6rem !important;
+}
+
+.acs-h5, .acs-h5-broad {
+font-size: 1.4rem !important;
+}
+
+.acs-h6, .acs-h6-broad {
+font-size: 1.2rem !important;
+}
+}
+
+
 .acs-wrapper { 
 font-family: "volvo-sans-regular", sans-serif
 }
