@@ -58,7 +58,7 @@ font-size: 1.1rem;
 /* Larger than phablet */
 @media (min-width: 575px) {
 .acs-h1, .acs-h1-broad {
-font-size: 2.5rem !important;
+font-size: 2.5rem;
 }
 
 .acs-h2, .acs-h2-broad {
@@ -92,13 +92,16 @@ font-family: var(--bold-font);
 font-weight: 700;
 }
 
-.acs-h1-broad, .acs-h2-broad, .acs-h3-broad, .acs-h4-broad, .acs-h5-broad, .acs-h6-broad  {
+.acs-broad {
+font-family: "volvo-broad", sans-serif;
+font-weight: 400;
+}
+
+.acs-h1-broad, .acs-h2-broad, .acs-h3-broad, .acs-h4-broad, .acs-h5-broad, .acs-h6-broad, .acs-broad  {
 margin: 0 !important;
 padding: 0 !important;
 border: 0 !important;
-font-size: 100%;
 vertical-align: baseline !important;
-text-transform: uppercase
 } 
 
 
@@ -117,12 +120,6 @@ text-transform: uppercase
 
 
 /* Text Colors */
-.acs-black {
-color: var(--black)
-}
-.acs-white {
-color: var(--white)
-}
 .acs-gray {
 color: var(--gray)
 }
