@@ -35,7 +35,7 @@ font-style: normal;
 
 
 /* OEM Font */
-.acs-wrapper { 
+.acs-wrapper, .acs-oem-brand { 
 font-family: "volvo-sans-regular", sans-serif
 }
 /* OEM Font */
@@ -169,7 +169,7 @@ font-weight: 700;
 
 
 /* Variables */
-.acs-wrapper {
+.acs-wrapper, .acs-oem-brand {
 --accent: #2A609D;
 --accent2: #284E80;
 --accent3: #1c6bba;
