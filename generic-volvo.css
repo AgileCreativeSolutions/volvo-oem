@@ -1,5 +1,12 @@
 /* OEM Font Embed */
 @font-face {
+font-family: "volvo-sans-semi-light";
+src: url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-semi-light.woff2") format("woff2"), url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-semi-light.woff") format("woff");
+font-weight: 100;
+font-style: normal;
+}
+
+@font-face {
 font-family: "volvo-sans-regular";
 src: url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-semi-light.woff2") format("woff2"), url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-semi-light.woff") format("woff");
 font-weight: 300;
@@ -9,6 +16,13 @@ font-style: normal;
 @font-face {
 font-family: "volvo-sans-medium";
 src: url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-medium.woff2") format("woff2"), url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-medium.woff") format("woff");
+font-weight: 500;
+font-style: normal;
+}
+
+@font-face {
+font-family: "volvo-sans-bold";
+src: url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-bold.woff2") format("woff2"), url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-bold.woff") format("woff");
 font-weight: 700;
 font-style: normal;
 }
@@ -158,6 +172,26 @@ margin-left: .2em;
 .acs-broad {
 font-family: "volvo-broad", sans-serif;
 font-weight: 400;
+}
+
+.volvo-brand-semi-light {
+font-family: "volvo-sans-semi-light", sans-serif;
+font-weight: 100;
+}
+
+.volvo-brand-rg {
+font-family: "volvo-sans-regular", sans-serif;
+font-weight: 300;
+}
+
+.volvo-brand-md {
+font-family: "volvo-sans-medium", sans-serif;
+font-weight: 500;
+}
+
+.volvo-brand-bd {
+font-family: "volvo-sans-bold", sans-serif;
+font-weight: 700;
 }
 
 .acs-bold {
