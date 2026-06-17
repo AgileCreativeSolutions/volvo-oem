@@ -1,36 +1,44 @@
 /* OEM Font Embed */
+/* Volvo Centum (variable font) — all weights instanced from one VF file */
 @font-face {
 font-family: "volvo-sans-semi-light";
-src: url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-semi-light.woff2") format("woff2"), url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-semi-light.woff") format("woff");
-font-weight: 100;
-font-style: normal;
-}
-
-@font-face {
-font-family: "volvo-sans-regular";
-src: url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-semi-light.woff2") format("woff2"), url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-semi-light.woff") format("woff");
+src: url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff2") format("woff2"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff") format("woff"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.ttf") format("truetype");
 font-weight: 300;
 font-style: normal;
 }
 
 @font-face {
+font-family: "volvo-sans-regular";
+src: url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff2") format("woff2"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff") format("woff"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.ttf") format("truetype");
+font-weight: 400;
+font-style: normal;
+}
+
+@font-face {
 font-family: "volvo-sans-medium";
-src: url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-medium.woff2") format("woff2"), url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-medium.woff") format("woff");
+src: url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff2") format("woff2"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff") format("woff"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.ttf") format("truetype");
 font-weight: 500;
 font-style: normal;
 }
 
 @font-face {
 font-family: "volvo-sans-bold";
-src: url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-bold.woff2") format("woff2"), url("https://www.volvocars.com/static/shared/fonts/volvo-novum/volvo-novum-bold.woff") format("woff");
+src: url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff2") format("woff2"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff") format("woff"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.ttf") format("truetype");
 font-weight: 700;
 font-style: normal;
 }
 
 @font-face {
+font-family: "volvo-sans-semi-bold";
+src: url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff2") format("woff2"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff") format("woff"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.ttf") format("truetype");
+font-weight: 600;
+font-style: normal;
+}
+
+@font-face {
 font-family: "volvo-broad";
-src: url("https://www.volvocars.com/static/shared/fonts/volvo-broad/volvo-broad.woff") format("woff");
-font-weight: 400;
+src: url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff2") format("woff2"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.woff") format("woff"), url("https://AgileCreativeSolutions.github.io/volvo-oem/VolvoCentum-VF.ttf") format("truetype");
+font-weight: 800;
 font-style: normal;
 }
 
@@ -65,7 +73,7 @@ line-height: 1.2;
 
 .acs-h1-broad, .acs-h2-broad, .acs-h3-broad, .acs-h4-broad, .acs-h5-broad, .acs-h6-broad {
 font-family: "volvo-broad", sans-serif;
-font-weight: 400;
+font-weight: 800;
 line-height: 1.2;
 }
 
@@ -171,22 +179,27 @@ margin-left: .2em;
 /* OEM Font Variables */
 .acs-broad {
 font-family: "volvo-broad", sans-serif;
-font-weight: 400;
+font-weight: 800;
 }
 
 .volvo-brand-semi-light {
 font-family: "volvo-sans-semi-light", sans-serif;
-font-weight: 100;
+font-weight: 300;
 }
 
 .volvo-brand-rg {
 font-family: "volvo-sans-regular", sans-serif;
-font-weight: 300;
+font-weight: 400;
 }
 
 .volvo-brand-md {
 font-family: "volvo-sans-medium", sans-serif;
 font-weight: 500;
+}
+
+.volvo-brand-sb {
+font-family: "volvo-sans-semi-bold", sans-serif;
+font-weight: 600;
 }
 
 .volvo-brand-bd {
@@ -468,20 +481,18 @@ background-color: rgba(20,20,20, var(--acs-bg-opacity))
 
 
 /* Link Accent */
-.acs-link-accent, .acs-link-accent2 {
+.acs-link-accent, .acs-link-accent2, .acs-link-accent3 {
 text-decoration: none;
 font-family: var(--bold-font);   
-text-transform: uppercase;
-letter-spacing: 0.02em;
 transition: all 0.2s ease-in-out 0s;
 }
 
 .acs-link-accent {
-color: var(--accent) !important;
+color: var(--black) !important;
 }
 
 .acs-link-accent:hover {
-color: var(--black) !important; 
+text-decoration: underline; 
 }
 
 .acs-link-accent2 {
@@ -489,7 +500,15 @@ color: var(--white) !important;
 }
 
 .acs-link-accent2:hover {
-opacity: 0.64 !important; 
+text-decoration: underline; 
+}
+
+.acs-link-accent3 {
+color: var(--accent) !important;
+}
+
+.acs-link-accent3:hover {
+text-decoration: underline; 
 }
 /* Link Accent */
 
@@ -498,12 +517,12 @@ opacity: 0.64 !important;
 /* BUTTONS: START */
 /* Button 1 */
 .acs-button {
-background-color: var(--accent2);
-border-radius: 4px;
+background-color: var(--black);
+border-radius: 9999px;
 display: inline-block;
 text-align: center;
 color: var(--white);
-border: solid 1px var(--accent2);
+border: solid 1px var(--black);
 text-decoration: none !important;
 padding: 12px 24px;
 font-family: var(--bold-font);   
@@ -516,19 +535,19 @@ transition-duration: 100ms, 300ms;
 transition-timing-function: ease-out;
 }
 .acs-button:hover {
-background-color: var(--black);
+background-color: rgba(0, 0, 0, 0.86);
 color: var(--white);
-border: solid 1px var(--black);
+border-top-color: rgba(0, 0, 0, 0.86);
 }
 
 /* Button 2 */
 .acs-button2 {
 background-color: transparent;
-border-radius: 4px;
+border-radius: 9999px;
 display: inline-block;
 text-align: center;
-color: var(--accent);
-border: solid 1px var(--accent);
+color: var(--black);
+border: solid 1px var(--black);
 text-decoration: none !important;
 padding: 12px 24px;
 font-family: var(--bold-font);   
@@ -541,15 +560,14 @@ transition-duration: 100ms, 300ms;
 transition-timing-function: ease-out;
 }
 .acs-button2:hover {
-background-color: var(--accent);
-color: var(--white);
-border: solid 1px var(--accent);
+background-color: rgba(0, 0, 0, 0.0325);
+color: var(--black);
 }
 
 /* Button 3 */
 .acs-button3 {
 background-color: var(--white);
-border-radius: 4px;
+border-radius: 9999px;
 display: inline-block;
 text-align: center;
 color: var(--black);
@@ -574,7 +592,7 @@ border-top-color: rgba(255, 255, 255, 0.64);
 /* Button 4 */
 .acs-button4 {
 background-color: transparent;
-border-radius: 4px;
+border-radius: 9999px;
 display: inline-block;
 text-align: center;
 color: var(--white);
@@ -597,12 +615,12 @@ color: var(--black);
 
 /* Button 5 */
 .acs-button5 {
-background-color: var(--black);
-border-radius: 4px;
+background-color: var(--accent2);
+border-radius: 9999px;
 display: inline-block;
 text-align: center;
 color: var(--white);
-border: solid 1px var(--black);
+border: solid 1px var(--accent2);
 text-decoration: none !important;
 padding: 12px 24px;
 font-family: var(--bold-font);   
@@ -615,19 +633,19 @@ transition-duration: 100ms, 300ms;
 transition-timing-function: ease-out;
 }
 .acs-button5:hover {
-background-color: rgba(0, 0, 0, 0.86);
+background-color: var(--black);
 color: var(--white);
-border-top-color: rgba(0, 0, 0, 0.86);
+border: solid 1px var(--black);
 }
 
 /* Button 6 */
 .acs-button6 {
 background-color: transparent;
-border-radius: 4px;
+border-radius: 9999px;
 display: inline-block;
 text-align: center;
-color: var(--black);
-border: solid 1px var(--black);
+color: var(--accent);
+border: solid 1px var(--accent);
 text-decoration: none !important;
 padding: 12px 24px;
 font-family: var(--bold-font);   
@@ -640,8 +658,9 @@ transition-duration: 100ms, 300ms;
 transition-timing-function: ease-out;
 }
 .acs-button6:hover {
-background-color: rgba(0, 0, 0, 0.0325);
-color: var(--black);
+background-color: var(--accent);
+color: var(--white);
+border: solid 1px var(--accent);
 }
 /* BUTTONS: END */
 
@@ -649,18 +668,16 @@ color: var(--black);
 
 /* Volvo Icon */
 .acs-volvo-icon {
-display: inline-flex;
 -moz-osx-font-smoothing: grayscale;
-position: relative;
-padding-right: .8em;
 }
 .acs-volvo-icon::after {
 font-family: FontAwesome;
 content: "\f105";
-position: absolute;
-right: 0;
-top: .5px;
-padding: 0 1px;
+margin-left: .25em;
+font-size: 1.3rem;
+display: inline-block;
+vertical-align: middle;
+text-decoration: none;
 }
 /* Volvo Icon */
 
